@@ -27,7 +27,7 @@ O código é projetado para facilitar a adição e sorteio de nomes, proporciona
 
 <h2>Acesso ao Projeto</h2>
 
-[Acesse o projeto no vercel clicando aqui](https://vercel.com/new/wellingtonnovais-projects/success?developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=challenge-amigo-secreto-pt-main-e43m2rbf4.vercel.app&projectName=challenge-amigo-secreto-pt-main&s=https%3A%2F%2Fgithub.com%2Fwellingtonnovais%2Fchallenge-amigo-secreto_pt-main&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1)
+[Acesse o projeto no vercel clicando aqui](https://challenge-amigo-secreto-pt-main-gray.vercel.app/)
 
 ## Autor
 

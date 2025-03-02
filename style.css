@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #003092;
+    --color-secondary: #FFF2DB;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #FD6004;
+    --color-button-hover: #fc7d07;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -44,7 +44,7 @@ body {
     flex: 60%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border-radius: 25px 25px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,7 +83,7 @@ body {
     width: 100%;
     padding: 10px;
     border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
+    border-radius: 15px 0 0 15px;
     font-size: 16px;
 }
 
@@ -110,7 +110,7 @@ button {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -118,7 +118,7 @@ button {
 .button-add {
     background-color: var(--color-tertiary);
     color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 .button-add:hover {
@@ -136,7 +136,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: var(--color-primary);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -159,4 +159,8 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+@media (min-width: 779px) {
+    
 }

@@ -161,6 +161,100 @@ ul {
     background-color: var(--color-button-hover);
 }
 
-@media (min-width: 779px) {
+@media (max-width: 829px) {
+    .main-content {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .header-banner {
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 250%;
+    }
     
+    .image-boy {
+        width: 50%;
+    }
+
+    .section-title {
+        font-size: 200%;
+        padding: 5%;
+    }
+
+    .input-wrapper {
+        width: 85%;
+        height: 50px;
+    }
+
+    .button-add {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 40%; 
+    }
+
+    .button-container {
+        display:flex;
+        width: 230px;
+        padding: auto;
+    }
+
+    .button-draw img {
+        width: 25px;
+        margin-right:10px;  
+    }
+}    
+
+@media (max-width: 480px) {
+    .main-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-title {
+        font-size: 200%;
+    }
+    
+    .image-boy {
+        width: 80%;
+    }
+
+    .input-section {
+      text-size-adjust: 90%;
+    }
+
+    .section-title {
+        font-size: 150%;
+        padding: 5%;
+    }
+
+    .input-wrapper {
+        width: 85%;
+        height: 44px;
+    }
+
+    .button-add {
+        width: 35%;
+        padding: 5%;
+        text-size-adjust: 70%; 
+    }
+
+    .button-container {
+        width: 50%;
+    }
+
+    .button-draw { 
+        width: 500%;
+        align-items: center;
+        padding: 5% 5%;
+        text-size-adjust: 80%;
+    }
+    .button-draw img {
+        width: 23px;
+        margin-right: 15%; 
+    }
 }

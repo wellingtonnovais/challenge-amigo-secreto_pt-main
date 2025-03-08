@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #003092;
-    --color-secondary: #FFF2DB;
+    --color-primary: #03D4D4;
+    --color-secondary: #FFFFFF;
     --color-tertiary: #C4C4C4;
     --color-button: #FD6004;
-    --color-button-hover: #fc7d07;
+    --color-button-hover: #FC7D07;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -65,7 +65,7 @@ body {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: #000000;
     margin: 10px 0;
     text-align: center;
 }
@@ -94,7 +94,6 @@ body {
 
 /* Estilos de entrada de texto */
 .input-title {
-    flex: 1;
     padding: 10px 15px;
     font-size: 16px;
     border: 2px solid #333;
@@ -136,7 +135,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: var(--color-primary);
+    color: var(--color-button);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -235,12 +234,14 @@ ul {
     .input-wrapper {
         width: 85%;
         height: 44px;
+        text-size-adjust: 70%;
     }
 
     .button-add {
         width: 35%;
         padding: 5%;
-        text-size-adjust: 70%; 
+        text-size-adjust: 70%;
+        inline-size:auto;
     }
 
     .button-container {

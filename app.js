@@ -64,7 +64,7 @@ function sortearAmigo() {
         let amigoSorteado = amigos[indice];
         let textoResultado = document.getElementById('resultado');
         textoResultado.innerHTML = (`O amigo secreto sorteado é: ${amigoSorteado}`);
-        amigos.pop(indice);
+        amigos.splice(indice,1);
     } else {
         alert('Você ainda não adicionou nenhum amigo ou todos os amigos já foram sorteados!')
     }

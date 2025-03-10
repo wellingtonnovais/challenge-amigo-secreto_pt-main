@@ -8,18 +8,19 @@ let amigos = [];
 let id = 'listaAmigos';
 //Adiciona o nome digitado pelo usuário à lista "amigos". Caso o campo esteja vazio ou o nome seja repetido chama uma função de erro equivalente
 function adicionandoAmigos() {
-    let jaExiste = amigos.includes(document.querySelector('input').value);
-    if(document.querySelector('input').value != '' && jaExiste === false) {
-        nome = document.querySelector('input').value;
-        amigos.push(document.querySelector('input').value) && limpaNome();
+    let nomeEscrito = document.querySelector('input').value.trim();
+    let jaExiste = amigos.includes(nomeEscrito);
+    if (jaExiste === false && nomeEscrito != '') {
+        amigos.push(nomeEscrito)
+        limpaNome();
         exibirListaDeAmigos();
     } else {
-        if(jaExiste == true) {
+        if (jaExiste === true) {
             limpaNome();
             mensagemNomeRepetido();
         } else {
             mensagemCampoVazio();
-        }
+        }   
     }
 }
 
@@ -40,25 +41,31 @@ function mensagemNomeRepetido(){
 
 //Exibe uma lista com os nomes dos amigos
 function exibirListaDeAmigos() {
-    let lista = document.getElementById(id);
-    lista.innerHTML = '';
-    for (let contador = 0; contador < amigos.length; contador++) {
+    limpaListaHtml();
+    for (let contador = 0; contador < amigos.length; contador ++) {
         let novoAmigo = amigos[contador];
-        lista = document.getElementById(id);
+        lista = document.getElementById(id)
         let novoElemento = document.createElement('li');
         lista.appendChild(novoElemento);
         novoElemento.innerHTML = novoAmigo;
     }
 }
 
+function limpaListaHtml() {
+    let lista = document.getElementById(id)
+    lista.innerHTML = '';
+}
+
 //limpa a lista e sorteia um amigo aleatório destre os presentes na lista
 function sortearAmigo() {
     if(amigos != '') {
-        let limpaLista = document.getElementById(id);
-        limpaLista.innerHTML = '';
+        limpaListaHtml();
         let indice = Math.floor(Math.random()*amigos.length);
         let amigoSorteado = amigos[indice];
         let textoResultado = document.getElementById('resultado');
         textoResultado.innerHTML = (`O amigo secreto sorteado é: ${amigoSorteado}`);
+        amigos.pop(indice);
+    } else {
+        alert('Você ainda não adicionou nenhum amigo ou todos os amigos já foram sorteados!')
     }
 }
